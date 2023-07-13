@@ -1,0 +1,32 @@
+server:
+  port: 8589
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/microservicesPract
+    username: avar
+    password: software
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: avar.mittal@bonamisoftware.com
+    password: jycalvkcujlvliqo
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+            
